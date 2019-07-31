@@ -10,8 +10,8 @@
 // * Author:      kchaves@intelligentsense.com
 // * Date:        28/10/2013
 // * Description: Media queries partial. Add here all the media queries
-//                
-// 
+//
+//
 
 /* ==========================================================================
    Media Queries
@@ -53,7 +53,7 @@
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-   
+
 }
 
 /* Large screens ----------- */
@@ -72,21 +72,23 @@
     INTERMEDIATE: Menu
    ==================== */
 
-   nav {
+   div {
 
         a {
                 float: left;
-                width: 27%;
+                width: auto;
                 margin: 0 1.7%;
                 padding: 25px 2%;
                 margin-bottom: 0;
         }
 
-        li:first-child a {
+        li:first-child object {
+                float: left;
                 margin-left: 0;
         }
 
         li:last-child a {
+                float: right;
                 margin-right: 0;
         }
    }

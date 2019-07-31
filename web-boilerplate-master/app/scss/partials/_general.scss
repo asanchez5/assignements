@@ -11,7 +11,7 @@
 // * Date:        28/10/2013
 // * Description: General partial. Add here all the classes and font-face that
 //                are used throughout the site.
-// 
+//
 
 
 /* ===================
@@ -32,19 +32,10 @@
     ALL: Orange Theme
    =================== */
 
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: black;
 }
 
 .title {
