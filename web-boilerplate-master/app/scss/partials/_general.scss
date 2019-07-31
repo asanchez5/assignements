@@ -24,6 +24,39 @@
    font-style: normal;
 }
 
+.background-image {
+  background-image: url("../assets/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 38vw;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.promotional-label {
+  color: white;
+  font-size: 2em;
+  width: 45vw;
+  margin-left: 4vw;
+  margin-top: 18vw;
+}
+
+.input-search-bar {
+  height: 3.5vw;
+  width: 45vw;
+  margin-left: 4vw;
+  margin-top: 2vw;
+}
+
+.articles-container {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: blue;
+  height: 38vw;
+}
+
 .clear {
     clear: both;
 }

@@ -1,18 +1,3 @@
-//
-// * All Rights Reserved
-// * This software is proprietary information of
-// * Intelligent Sense
-// * Use is subject to license terms.
-// * Filename: _header.scss
-//
-
-// *
-// * Author:      kchaves@intelligentsense.com
-// * Date:        28/10/2013
-// * Description: Header partial. Add here all the classes for the header
-//                of the site.
-//
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -23,24 +8,38 @@ body {
   background-color: #333;
 }
 
+.navigation {
+  float: right;
+}
+
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
   font-size: 17px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.topnav a:first-child {
+  float: left;
+  margin-top: 0;
+}
+
+.ingresar-link {
+  margin-left: 50px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  // background-color: #ddd;
+  // color: black;
+  text-decoration: underline;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+  // background-color: #4CAF50;
+  // color: white;
 }
 
 .topnav .icon {
@@ -67,35 +66,4 @@ body {
     display: block;
     text-align: left;
   }
-}
-
-
-nav {
-
-    li {
-        float: left;
-        margin-top: 15px;
-        margin-left: 20px;
-        padding: 15px 0;
-
-        font-family: $font-regular;
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold;
-
-        color: white;
-    }
-    li {
-      float: left;
-    }
-
-    a:hover,
-    a:visited {
-        color: white;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
 }
