@@ -24,7 +24,7 @@
    font-style: normal;
 }
 
-.background-image {
+.background-image-container {
   background-image: url("../assets/banner.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -41,21 +41,134 @@
   width: 45vw;
   margin-left: 4vw;
   margin-top: 18vw;
+  font-weight: 550;
 }
 
 .input-search-bar {
-  height: 3.5vw;
-  width: 45vw;
+  height: 45px;
+  width: 540px;
   margin-left: 4vw;
+
+  background: #FFFFFF;
+  border: 1px solid #8E8E8E;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+button{
+  right: 0px;
+  top: 4px;
+  border:none;
+  height:20px;
+  width:20px;
+  border-radius:100%;
+  outline:none;
+  text-align:center;
+  font-weight:bold;
+  padding:2px;
+}
+
+input{
+  height:25px;
+  width:100%;
+  padding-left:10px;
+  border-radius: 4px;
+  border:none;outline:none;
+}
+
+.buttonInside{
+  position:relative;
   margin-top: 2vw;
 }
 
-.articles-container {
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: blue;
-  height: 38vw;
+#erase {
+  position: relative;
+  margin-left: -47px;
+  height: 30px;
+  width: 30px;
+  background: url("../assets/lupa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+button:hover{
+  cursor:pointer;
+}
+
+.articles-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.flex-item-container {
+  width: 320px;
+  background-color: white;
+  padding: 20px 20px;
+  display: inline-block;
+
+  .article-title {
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+  }
+  .article-logo {
+    float: right;
+    height: 32px;
+    width: 32px;
+  }
+
+  .article-separator {
+    border: 1px solid #D8D8D8;
+    margin-top: 5px;
+    margin-bottom: 10px;
+ }
+
+  .article-image {
+    height: 126px;
+    width: 126px; //this shouldnt be like that
+  }
+
+  article {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
+    width: 172px;
+    float: right;
+  }
+
+  .article-from-price {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    color: black;
+    float: left;
+    margin-top: 40px;
+  }
+
+  .article-button {
+    height: 34px;
+    width: 156px;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+    float: right;
+    margin-top: 30px;
+    border-radius: 18px;
+  }
+
+}
+
+
 
 .clear {
     clear: both;
