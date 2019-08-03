@@ -13,147 +13,134 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="description" content="" />
+        <meta name="description" content="Web page to sell agent services" />
         <meta name="viewport" content="width=device-width" />
         <title>Run forest, Run!</title>
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
     </head>
     <body>
         <!-- build:remove -->
         <span id="browser-sync-binding"></span>
          <!-- endbuild -->
-        <div class="header-container">
             <header class="wrapper clearfix">
-              <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">
+              <div class="header" id="myTopnav">
+                <a href="#home" class="header__item">
                   <img src="assets/logo.png" alt="Image logo of Super Agentes">
                 </a>
-                <a class="ingresar-link" href="#about">Ingresar</a>
-                <a href="#">Contacto</a>
-                <a href="#">Directorio de Agentes</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a class = "header__ingresar-link" href="#">Ingresar</a>
+                <a class = "header__item" href="#">Contacto</a>
+                <a class = "header__item" href="#">Directorio de Agentes</a>
+                <a href="javascript:void(0);" class="header__icon" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
                 </a>
               </div>
             </header>
-        </div>
 
-        <div class="main-container">
             <div class="main wrapper clearfix">
-              <div class="background-image-container">
-                <label class="promotional-label">Los mejores agentes de seguridad</label>
+              <div class="main__background-image-container">
+                <label class="main__promotional-label">Los mejores agentes de seguridad</label>
 
-                <div class="buttonInside">
-                  <input class="input-search-bar" type="text" name="" value="" placeholder="     Buscar por ubicacion">
-                  <button id="erase"></button>
+                <div class="main__search-bar">
+                  <input class="main__search-bar--input" type="text" name="" value="" placeholder="Buscar por ubicacion">
+                  <button class="main__search-bar--button"></button>
                 </div>
               </div>
 
-              <div class="articles-container">
-                <div class="flex-item-container">
-                  <label class="article-title">Chuck Norris Bodyguards</label>
-                  <img class="article-logo" src="../assets/certified.png" alt="logo">
-                  <div class="article-separator">
-                  </div>
+              <div class="flex-container">
+                <div class="flex-container__item">
+                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
+                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
+                  <div class="flex-container__item--separator"></div>
 
-                  <img class="article-image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
+                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
                       Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
                       convallis ante.</article>
-                  <label class="article-from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="article-button">Contratar</button>
+                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
+                  <button type="button" class="flex-container__item--button">Contratar</button>
                 </div>
 
-                <div class="flex-item-container">
-                  <label class="article-title">Chuck Norris Bodyguards</label>
-                  <img class="article-logo" src="../assets/certified.png" alt="logo">
-                  <div class="article-separator">
-                  </div>
+                <div class="flex-container__item">
+                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
+                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
+                  <div class="flex-container__item--separator"></div>
 
-                  <img class="article-image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
+                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
                       Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
                       convallis ante.</article>
-                  <label class="article-from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="article-button">Contratar</button>
+                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
+                  <button type="button" class="flex-container__item--button">Contratar</button>
                 </div>
 
-                <div class="flex-item-container">
-                  <label class="article-title">Chuck Norris Bodyguards</label>
-                  <img class="article-logo" src="../assets/certified.png" alt="logo">
-                  <div class="article-separator">
-                  </div>
+                <div class="flex-container__item">
+                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
+                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
+                  <div class="flex-container__item--separator"></div>
 
-                  <img class="article-image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
+                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
                       Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
                       convallis ante.</article>
-                  <label class="article-from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="article-button">Contratar</button>
+                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
+                  <button type="button" class="flex-container__item--button">Contratar</button>
                 </div>
 
-                <div class="flex-item-container">
-                  <label class="article-title">Chuck Norris Bodyguards</label>
-                  <img class="article-logo" src="../assets/certified.png" alt="logo">
-                  <div class="article-separator">
-                  </div>
+                <div class="flex-container__item">
+                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
+                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
+                  <div class="flex-container__item--separator"></div>
 
-                  <img class="article-image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
+                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
                       Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
                       convallis ante.</article>
-                  <label class="article-from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="article-button">Contratar</button>
+                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
+                  <button type="button" class="flex-container__item--button">Contratar</button>
                 </div>
 
-                <div class="flex-item-container">
-                  <label class="article-title">Chuck Norris Bodyguards</label>
-                  <img class="article-logo" src="../assets/certified.png" alt="logo">
-                  <div class="article-separator">
-                  </div>
+                <div class="flex-container__item">
+                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
+                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
+                  <div class="flex-container__item--separator"></div>
 
-                  <img class="article-image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
+                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
                       Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
                       convallis ante.</article>
-                  <label class="article-from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="article-button">Contratar</button>
+                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
+                  <button type="button" class="flex-container__item--button">Contratar</button>
                 </div>
 
-                <div class="flex-item-container">
-                  <label class="article-title">Chuck Norris Bodyguards</label>
-                  <img class="article-logo" src="../assets/certified.png" alt="logo">
-                  <div class="article-separator">
-                  </div>
+                <div class="flex-container__item">
+                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
+                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
+                  <div class="flex-container__item--separator"></div>
 
-                  <img class="article-image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
+                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
                       Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
                       convallis ante.</article>
-                  <label class="article-from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="article-button">Contratar</button>
+                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
+                  <button type="button" class="flex-container__item--button">Contratar</button>
                 </div>
-
               </div>
 
             </div> <!-- #main -->
-        </div> <!-- #main-container -->
 
-        <div class="footer-container">
+        <div class="footer">
             <footer class="wrapper">
-              <label class="footer-text-description">Desarrollado por Akurey.com | Todos los derechos reservados</label>
-              <label class="footer-text-terms">Terminos y condiciones</label>
+              <label class="footer__text-description">Desarrollado por Akurey.com | Todos los derechos reservados</label>
+              <label class="footer__text-terms">Terminos y condiciones</label>
             </footer>
         </div>
 

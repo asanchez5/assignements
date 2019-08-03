@@ -68,76 +68,130 @@
 
 
 @media screen and (max-width: 768px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+  .header__item:not(:first-child) {display: none;}
+  .header__ingresar-link {display: none !important;}
+  .header__icon {
     float: right;
-    display: block;
+    display: block !important;
     margin-right: 20px;
-    margin-top: 5px;
+    margin-top: 5px !important;
     i {
       font-size: 3.5em;
     }
   }
 
-  .background-image-container {
-    background-image: url(../assets/banner-mobile.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 58vw;
-    width: auto;
-}
-  .promotional-label {
-      margin-top: 32vw;
-      margin-left: 10vw;
-  }
+  .main {
+      &__background-image-container {
+        background-image: url(../assets/banner-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 58vw;
+        width: auto;
+      }
+      &__promotional-label {
+        margin-top: 32vw;
+        margin-left: 10vw;
+      }
 
-  .input-search-bar {
-    height: 45px;
-    width: 82vw;
-    margin-left: 10vw;
-    margin-top: 4vw;
+      &__search-bar{
+        position:relative;
+        margin-top: 2vw;
+
+        &--input {
+          height: 45px;
+          width: 82vw;
+          margin-left: 10vw;
+          margin-top: 4vw;
+        }
+
+        &--button{
+          position: relative;
+          margin-left: -47px;
+          height: 30px;
+          width: 30px;
+
+          background: url(../assets/lupa.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          &:hover{
+            cursor:pointer;
+          }
+        }
+      }
   }
 
 }
 
 @media screen and (max-width: 480px) {
-  .promotional-label {
-    margin-top: 62vw;
-    color: black;
-    margin-left: 10vw;
-    font-size: 24px;
-    width: 75vw;
+  .main {
+      &__background-image-container {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 58vw;
+        width: auto;
+      }
+      &__promotional-label {
+        margin-top: 62vw;
+        color: black;
+        margin-left: 10vw;
+        font-size: 24px;
+        width: 75vw;
+      }
+
+      &__search-bar{
+        position:relative;
+        margin-top: 2vw;
+
+        &--input {
+          height: 45px;
+          width: 89vw;
+          margin-left: 5vw;
+          margin-top: 2vw;
+        }
+
+        &--button{
+          position: relative;
+          margin-left: -47px;
+          height: 30px;
+          width: 30px;
+
+          background: url("../assets/lupa.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          &:hover{
+            cursor:pointer;
+          }
+        }
+      }
   }
 
-  .articles-container {
+  .flex-container {
     margin-top: 36vw;
     padding: 0;
   }
 
-  .input-search-bar {
-    height: 45px;
-    width: 89vw;
-    margin-left: 5vw;
-    margin-top: 2vw;
-  }
-
-  .footer-container {
+  .footer {
 
       footer {
-          color: white;
           padding-top: 20px;
           padding-bottom: 20px;
           flex-direction: column;
           justify-content: space-around;
-          display: flex;
+      }
+      &__text-description {
+        margin-right: 150px;
+      }
+      &__text-terms {
+        margin-right: 0;
+        margin-left: 30px;
       }
   }
 
-  .footer-text-terms {
-    margin-right: 0;
-    margin-left: 30px;
-  }
+
    /* Styles */
 }
 

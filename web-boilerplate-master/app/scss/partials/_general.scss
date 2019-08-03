@@ -7,235 +7,145 @@
 //
 
 // *
-// * Author:      kchaves@intelligentsense.com
+// * Author:      asanchez@akurey.com
 // * Date:        28/10/2013
-// * Description: General partial. Add here all the classes and font-face that
-//                are used throughout the site.
+// * Description: General partial.
 //
 
+.main {
+    &__background-image-container {
+      background-image: url("../assets/banner.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 38vw;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    &__promotional-label {
+      color: white;
+      font-size: 2em;
+      width: 45vw;
+      margin-left: 4vw;
+      margin-top: 18vw;
+      font-weight: 550;
+    }
 
-/* ===================
-    ALL: Fonts
-   =================== */
-@font-face {
-   font-family: 'IntelligentSense';
-   src: url('../fonts/tgl-31034-1-normschrift.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
+    &__search-bar{
+      position:relative;
+      margin-top: 2vw;
+
+      &--input {
+        height: 45px;
+        width: 540px;
+        margin-left: 4vw;
+
+        background: #FFFFFF;
+        border: 1px solid #8E8E8E;
+        box-sizing: border-box;
+        border-radius: 20px;
+
+        text-indent: 30px;
+      }
+
+      &--button{
+        position: relative;
+        margin-left: -47px;
+        height: 30px;
+        width: 30px;
+
+        background: url("../assets/lupa.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border:none;outline:none;
+
+        &:hover{
+          cursor:pointer;
+        }
+      }
+    }
 }
 
-.background-image-container {
-  background-image: url("../assets/banner.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 38vw;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.promotional-label {
-  color: white;
-  font-size: 2em;
-  width: 45vw;
-  margin-left: 4vw;
-  margin-top: 18vw;
-  font-weight: 550;
-}
-
-.input-search-bar {
-  height: 45px;
-  width: 540px;
-  margin-left: 4vw;
-
-  background: #FFFFFF;
-  border: 1px solid #8E8E8E;
-  box-sizing: border-box;
-  border-radius: 20px;
-}
-
-button{
-  right: 0px;
-  top: 4px;
-  border:none;
-  height:20px;
-  width:20px;
-  border-radius:100%;
-  outline:none;
-  text-align:center;
-  font-weight:bold;
-  padding:2px;
-}
-
-input{
-  height:25px;
-  width:100%;
-  padding-left:10px;
-  border-radius: 4px;
-  border:none;outline:none;
-}
-
-.buttonInside{
-  position:relative;
-  margin-top: 2vw;
-}
-
-#erase {
-  position: relative;
-  margin-left: -47px;
-  height: 30px;
-  width: 30px;
-  background: url("../assets/lupa.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-button:hover{
-  cursor:pointer;
-}
-
-.articles-container {
+.flex-container {
   padding: 20px;
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
+
+  &__item {
+    width: 320px;
+    background-color: white;
+    padding: 20px 20px;
+    display: inline-block;
+
+    &--title {
+      font-family: Arial;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: bold;
+    }
+    &--logo {
+      float: right;
+      height: 32px;
+      width: 32px;
+    }
+
+    &--separator {
+      border: 1px solid #D8D8D8;
+      margin-top: 5px;
+      margin-bottom: 10px;
+   }
+
+    &--image {
+      height: 126px;
+      width: 126px; //this shouldnt be like that
+    }
+
+    &--description {
+      font-family: Arial;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: justify;
+      width: 172px;
+      float: right;
+    }
+
+    &--from-price {
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 16px;
+      color: black;
+      float: left;
+      margin-top: 40px;
+    }
+
+    &--button {
+      height: 34px;
+      width: 156px;
+      padding: 10px;
+      background-color: black;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+
+      float: right;
+      margin-top: 30px;
+      border-radius: 18px;
+    }
+  }
 }
-
-.flex-item-container {
-  width: 320px;
-  background-color: white;
-  padding: 20px 20px;
-  display: inline-block;
-
-  .article-title {
-    font-family: Arial;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: bold;
-  }
-  .article-logo {
-    float: right;
-    height: 32px;
-    width: 32px;
-  }
-
-  .article-separator {
-    border: 1px solid #D8D8D8;
-    margin-top: 5px;
-    margin-bottom: 10px;
- }
-
-  .article-image {
-    height: 126px;
-    width: 126px; //this shouldnt be like that
-  }
-
-  article {
-    font-family: Arial;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: justify;
-    width: 172px;
-    float: right;
-  }
-
-  .article-from-price {
-    font-family: Arial;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 16px;
-    color: black;
-    float: left;
-    margin-top: 40px;
-  }
-
-  .article-button {
-    height: 34px;
-    width: 156px;
-    padding: 10px;
-    background-color: black;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-
-    float: right;
-    margin-top: 30px;
-    border-radius: 18px;
-  }
-
-}
-
-
 
 .clear {
     clear: both;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container,
-.footer-container,
-.main aside {
-    background: black;
-}
-
-.title {
-    color: white;
-}
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-.ir {
-    overflow: hidden;
-
-    background-color: transparent;
-    border: 0;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
 
 .clearfix:before,
 .clearfix:after {
