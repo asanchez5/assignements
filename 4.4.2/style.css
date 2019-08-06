@@ -1,17 +1,17 @@
 p {
   color: white;
   font-size: 1em;
+  height: 70%;
 }
 
 .container {
   width: 200px;
-  height: 300px;
   padding: 20px;
   padding-top: 10px;
 }
 
 #twitter-text {
-  font-family: monospace;
+  font-family: arial;
 }
 
 #instagram-text {
@@ -40,19 +40,7 @@ a:hover {
 
 .icon {
   font-size: 3em;
-  transform: translate(75px, 50px);
-}
-
-.fa-facebook {
-  margin-top: 33%;
-}
-
-.fa-twitter-square {
-  margin-top: 18%;
-}
-
-.fa-instagram {
-  margin-bottom: 10%;
+  margin-left: 35%;
 }
 
 .box-container {
