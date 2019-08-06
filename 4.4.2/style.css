@@ -1,0 +1,61 @@
+p {
+  color: white;
+  font-size: 1em;
+  height: 70%;
+}
+
+.container {
+  width: 200px;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+#twitter-text {
+  font-family: arial;
+}
+
+#instagram-text {
+  font-family: sans-serif;
+}
+
+#facebook-text {
+  font-family: Fira Code;
+}
+
+#facebook-color {
+  background-color: #003375;
+}
+
+#instagram-color {
+  background-color: #d4aa27;
+}
+
+#twitter-color {
+  background-color: #0A74FF;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.icon {
+  font-size: 3em;
+  margin-left: 35%;
+}
+
+.box-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5%;
+}
