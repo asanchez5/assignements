@@ -12,15 +12,19 @@
  * javascript.
  */
 
-
-function Pokemon (p_name, p_type, p_attack, p_defense) {
-    this.name = p_name;
-    this.type = p_type;
-    this.attack = p_attack;
-    this.defense = p_defense;
+ /**
+ *Creates a pokemon
+ * @param {String} name
+ * @returns {Object}
+ */
+function Pokemon (pName, pType, pAtack, pDefense) {
+    this.name = pName;
+    this.type = pType;
+    this.attack = pAtack;
+    this.defense = pDefense;
 }
 
-var effectiveness_rules = {
+const effectiveness_rules = {
     "fire" : {
         "grass": 2,
         "water": 0.5,
@@ -39,12 +43,25 @@ var effectiveness_rules = {
     }
 }
 
-function fight (_PokemonA, _PokemonB)  {
-    var effectiveness = effectiveness_rules[_PokemonA.type][_PokemonB.type]|| 1;
-    return calculate_damage(_PokemonA, _PokemonB, effectiveness);
+/**
+* Used to fetch the correct efectivenes which later will be used as a param
+* to calculate the final damage
+* @param {Pokemon} pPokemonA
+* @param {Pokemon} pPokemonB
+* @returns {number}
+*/
+function fight (pPokemonA, pPokemonB)  {
+    const effectiveness = effectiveness_rules[pPokemonA.type][pPokemonB.type]|| 1;
+    return calculate_damage(pPokemonA, pPokemonB, effectiveness);
 }
 
-function calculate_damage (_PokemonA, _PokemonB, effectiveness){
-    var damage = Math.round(50 * (_PokemonA.attack / _PokemonB.defense) * effectiveness);
-    return damage;
+/**
+* Calculates the total damage
+* @param {Pokemon} pPokemonA
+* @param {Pokemon} pPokemonB
+* @param {number} pEffectiveness
+* @returns {number}
+*/
+function calculate_damage (pPokemonA, pPokemonB, pEffectiveness){
+    return Math.round(50 * (pPokemonA.attack / pPokemonB.defense) * pEffectiveness);
 }
