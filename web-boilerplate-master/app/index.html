@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    All Rights Reserved
+    This software is proprietary information of
+    Intelligent Sense
+    Use is subject to license terms.
+    Filename: index.html
+-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="description" content="Web page to sell agent services" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Run forest, Run!</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+        <script src="/js/main.js"></script>
+    </head>
+    <body>
+        <!-- build:remove -->
+        <span id="browser-sync-binding"></span>
+         <!-- endbuild -->
+            <header class="wrapper clearfix">
+              <div class="header" id="myTopnav">
+                <a href="#home" class="header__item">
+                  <img src="assets/logo.png" alt="Image logo of Super Agentes">
+                </a>
+                <a class = "header__ingresar-link" href="#">Ingresar</a>
+                <a class = "header__item" href="#">Contacto</a>
+                <a class = "header__item" href="#">Directorio de Agentes</a>
+                <a href="javascript:void(0);" class="header__icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            </header>
+
+            <div class="main wrapper clearfix">
+              <div class="main__background-image-container">
+                <label class="main__promotional-label">Los mejores agentes de seguridad</label>
+
+                <div class="main__search-bar">
+                  <input class="main__search-bar--input" id="search_bar" type="text" name="" value="" placeholder="Buscar por ubicacion">
+                  <button class="main__search-bar--button" id="search_button"></button>
+                </div>
+              </div>
+
+              <div class="flex-container" id="output">
+                <script type="text/html" id="output-script">
+                        {{#companies}}
+                        <div class="flex-container__item">
+                          <label class="flex-container__item--title">{{name}}</label>
+                          {{#isCertified}}
+                            <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
+                          {{/isCertified}}
+                          <div class="flex-container__item--separator"></div>
+                          <img class="flex-container__item--image" src={{image}} alt="Chuck Norris image">
+                          <article class="flex-container__item--description">{{description}}</article>
+                          <label class="flex-container__item--from-price">Desde: ${{rate}} / {{hours}} horas</label>
+                          <button type="button" class="flex-container__item--button">Contratar</button>
+                        </div>
+                        {{/companies}}
+                </script>
+              </div>
+            </div> <!-- #main -->
+
+        <div class="footer">
+            <footer class="wrapper">
+              <label class="footer__text-description">Desarrollado por Akurey.com | Todos los derechos reservados</label>
+              <label class="footer__text-terms">Terminos y condiciones</label>
+            </footer>
+        </div>
+        <!-- Live reload option. Remove in production environments -->
+        <!-- <script src="//localhost:35729/livereload.js"></script>-->
+    </body>
+</html>

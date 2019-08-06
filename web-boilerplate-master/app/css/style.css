@@ -1,0 +1,575 @@
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: style.scss
+ */
+/*
+ * Author:      kchaves@intelligentsense.com
+ * Date:        28/10/2013
+ * Description: Main COMPASS file. Import all the partials you need here.
+ */
+/**
+* Mixin for image replacement
+*/
+.main__background-image-container {
+  background-image: url("../assets/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 38vw;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.main__promotional-label {
+  color: white;
+  font-size: 2em;
+  width: 45vw;
+  margin-left: 4vw;
+  margin-top: 18vw;
+  font-weight: 550;
+}
+.main__search-bar {
+  position: relative;
+  margin-top: 2vw;
+}
+.main__search-bar--input {
+  height: 45px;
+  width: 540px;
+  margin-left: 4vw;
+  background: #FFFFFF;
+  border: 1px solid #8E8E8E;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-indent: 30px;
+}
+.main__search-bar--button {
+  position: relative;
+  margin-left: -47px;
+  transform: translate(0px, 5px);
+  height: 30px;
+  width: 30px;
+  background: url("../assets/lupa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  outline: none;
+}
+.main__search-bar--button:hover {
+  cursor: pointer;
+}
+
+.flex-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.flex-container__item {
+  width: 320px;
+  background-color: white;
+  padding: 20px 20px;
+  display: inline-block;
+}
+.flex-container__item--title {
+  font-family: Arial;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.flex-container__item--logo {
+  float: right;
+  height: 32px;
+  width: 32px;
+}
+.flex-container__item--separator {
+  border: 1px solid #D8D8D8;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.flex-container__item--image {
+  height: 126px;
+  width: 126px;
+}
+.flex-container__item--description {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: justify;
+  width: 172px;
+  float: right;
+}
+.flex-container__item--from-price {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  color: black;
+  float: left;
+  margin-top: 40px;
+}
+.flex-container__item--button {
+  height: 34px;
+  width: 156px;
+  padding: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
+  margin-top: 30px;
+  border-radius: 18px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: Black;
+}
+.header__item {
+  float: right;
+  display: block;
+  color: white;
+  font-size: 17px;
+  margin-top: 27px;
+  margin-left: 20px;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header__item:not(:first-child):hover {
+  text-decoration: none;
+  border-bottom: 5px solid white;
+}
+.header__item:first-child {
+  float: left;
+  margin-top: 10px;
+}
+.header__icon {
+  float: right;
+  display: block;
+  color: white;
+  font-size: 17px;
+  margin-top: 27px;
+  margin-left: 20px;
+  text-decoration: none;
+  display: none;
+}
+.header__ingresar-link {
+  float: right;
+  display: block;
+  color: white;
+  font-size: 17px;
+  margin-top: 27px;
+  text-decoration: none;
+  margin-left: 65px;
+  margin-right: 60px;
+}
+
+.footer {
+  font-size: 12px;
+}
+.footer footer {
+  color: white;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+.footer__text-description {
+  float: left;
+  margin-left: 30px;
+  justify-content: flex-start;
+}
+.footer__text-terms {
+  float: right;
+  margin-right: 30px;
+  justify-content: flex-end;
+  text-decoration: underline;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #221;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+h1 {
+  font-family: "IntelligentSense", Verdana, Arial, sans;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+.main {
+  padding: 0 0;
+}
+.main article h1 {
+  font-size: 2em;
+}
+.main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+@media only screen and (max-width: 1224px) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* Retina Display ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+@media screen and (max-width: 768px) {
+  .header__item:not(:first-child) {
+    display: none;
+  }
+
+  .header__ingresar-link {
+    display: none !important;
+  }
+
+  .header__icon {
+    float: right;
+    display: block !important;
+    margin-right: 20px;
+    margin-top: 5px !important;
+  }
+  .header__icon i {
+    font-size: 3.5em;
+  }
+
+  .main__background-image-container {
+    background-image: url(../assets/banner-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 58vw;
+    width: auto;
+  }
+  .main__promotional-label {
+    margin-top: 32vw;
+    margin-left: 10vw;
+  }
+  .main__search-bar {
+    position: relative;
+    margin-top: 2vw;
+  }
+  .main__search-bar--input {
+    height: 45px;
+    width: 82vw;
+    margin-left: 10vw;
+    margin-top: 4vw;
+  }
+  .main__search-bar--button {
+    position: relative;
+    margin-left: -47px;
+    height: 30px;
+    width: 30px;
+    background: url(../assets/lupa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main__search-bar--button:hover {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main__background-image-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 58vw;
+    width: auto;
+  }
+  .main__promotional-label {
+    margin-top: 62vw;
+    color: black;
+    margin-left: 10vw;
+    font-size: 24px;
+    width: 75vw;
+  }
+  .main__search-bar {
+    position: relative;
+    margin-top: 2vw;
+  }
+  .main__search-bar--input {
+    height: 45px;
+    width: 89vw;
+    margin-left: 5vw;
+    margin-top: 2vw;
+  }
+  .main__search-bar--button {
+    position: relative;
+    margin-left: -47px;
+    height: 30px;
+    width: 30px;
+    background: url("../assets/lupa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main__search-bar--button:hover {
+    cursor: pointer;
+  }
+
+  .flex-container {
+    margin-top: 36vw;
+    padding: 0;
+  }
+
+  .footer footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer__text-description {
+    margin-right: 150px;
+  }
+  .footer__text-terms {
+    margin-right: 0;
+    margin-left: 30px;
+  }
+
+  /* Styles */
+}
+@media only screen and (min-width: 480px) {
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  div a {
+    float: left;
+    width: auto;
+    margin-bottom: 0;
+  }
+  div li:first-child object {
+    float: left;
+    margin-left: 0;
+  }
+  div li:last-child a {
+    float: right;
+    margin-right: 0;
+  }
+
+  /* ========================
+      INTERMEDIATE: IE Fixes
+     ======================== */
+  nav ul li {
+    display: inline;
+  }
+
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* ====================
+      WIDE: CSS3 Effects
+     ==================== */
+  .header-container,
+  .main aside {
+    -webkit-box-shadow: 0 5px 10px #aaa;
+    -moz-box-shadow: 0 5px 10px #aaa;
+    box-shadow: 0 5px 10px #aaa;
+  }
+
+  /* ============
+      WIDE: Menu
+     ============ */
+  .title {
+    float: left;
+  }
+
+  nav {
+    float: right;
+    width: 38%;
+  }
+
+  /* ============
+      WIDE: Main
+     ============ */
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* ===============
+      Maximal Width
+     =============== */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
