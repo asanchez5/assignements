@@ -5,7 +5,7 @@ $(document).ready(function () {
   function getPosts() {
     return new Promise(function(resolve, reject) {
     var req = new XMLHttpRequest();
-        req.open('GET', 'https://api.myjson.com/bins/1bpb69', false);
+        req.open('GET', 'https://api.myjson.com/bins/76m21', false);
         req.onload = function() {
           if (req.status == 200) {
             resolve(JSON.parse(req.response));
