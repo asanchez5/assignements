@@ -50,6 +50,7 @@
   margin-left: -47px;
   height: 30px;
   width: 30px;
+  transform: translate(0px, 5px);
   background: url("../assets/lupa.png");
   background-repeat: no-repeat;
   background-size: cover;
