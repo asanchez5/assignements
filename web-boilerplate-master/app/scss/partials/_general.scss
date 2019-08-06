@@ -1,0 +1,163 @@
+//
+// * All Rights Reserved
+// * This software is proprietary information of
+// * Intelligent Sense
+// * Use is subject to license terms.
+// * Filename: _general.scss
+//
+
+// *
+// * Author:      asanchez@akurey.com
+// * Date:        28/10/2013
+// * Description: General partial.
+//
+
+.main {
+    &__background-image-container {
+      background-image: url("../assets/banner.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 38vw;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    &__promotional-label {
+      color: white;
+      font-size: 2em;
+      width: 45vw;
+      margin-left: 4vw;
+      margin-top: 18vw;
+      font-weight: 550;
+    }
+
+    &__search-bar{
+      position:relative;
+      margin-top: 2vw;
+
+      &--input {
+        height: 45px;
+        width: 540px;
+        margin-left: 4vw;
+
+        background: #FFFFFF;
+        border: 1px solid #8E8E8E;
+        box-sizing: border-box;
+        border-radius: 20px;
+
+        text-indent: 30px;
+      }
+
+      &--button{
+        position: relative;
+        margin-left: -47px;
+        height: 30px;
+        width: 30px;
+        transform: translate(0px,5px); 
+
+        background: url("../assets/lupa.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border:none;outline:none;
+
+        &:hover{
+          cursor:pointer;
+        }
+      }
+    }
+}
+
+.flex-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+
+  &__item {
+    width: 320px;
+    background-color: white;
+    padding: 20px 20px;
+    display: inline-block;
+
+    &--title {
+      font-family: Arial;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: bold;
+    }
+    &--logo {
+      float: right;
+      height: 32px;
+      width: 32px;
+    }
+
+    &--separator {
+      border: 1px solid #D8D8D8;
+      margin-top: 5px;
+      margin-bottom: 10px;
+   }
+
+    &--image {
+      height: 126px;
+      width: 126px; //this shouldnt be like that
+    }
+
+    &--description {
+      font-family: Arial;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: justify;
+      width: 172px;
+      float: right;
+    }
+
+    &--from-price {
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 16px;
+      color: black;
+      float: left;
+      margin-top: 40px;
+    }
+
+    &--button {
+      height: 34px;
+      width: 156px;
+      padding: 10px;
+      background-color: black;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+
+      float: right;
+      margin-top: 30px;
+      border-radius: 18px;
+    }
+  }
+}
+
+.clear {
+    clear: both;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

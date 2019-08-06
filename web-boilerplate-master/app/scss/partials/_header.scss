@@ -1,0 +1,66 @@
+//
+// * All Rights Reserved
+// * This software is proprietary information of
+// * Intelligent Sense
+// * Use is subject to license terms.
+// * Filename: _footer.scss
+//
+
+// *
+// * Author:      asanchez@akurey.com
+// * Date:        03/08/2019
+// * Description: Header partial.
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: Black;
+
+  &__item {
+    float: right;
+    display: block;
+    color: white;
+    font-size: 17px;
+    margin-top: 27px;
+    margin-left: 20px;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:not(:first-child):hover {
+      text-decoration: none;
+      border-bottom: 5px solid white;
+    }
+
+    &:first-child {
+      float: left;
+      margin-top: 10px;
+    }
+  }
+
+  &__icon {
+    float: right;
+    display: block;
+    color: white;
+    font-size: 17px;
+    margin-top: 27px;
+    margin-left: 20px;
+    text-decoration: none;
+    display: none;
+  }
+
+  &__ingresar-link {
+    float: right;
+    display: block;
+    color: white;
+    font-size: 17px;
+    margin-top: 27px;
+    text-decoration: none;
+    margin-left: 65px;
+    margin-right: 60px
+  }
+}
