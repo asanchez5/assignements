@@ -5,10 +5,9 @@ $(document).ready(function () {
   function getPosts() {
     return new Promise(function(resolve, reject) {
     var req = new XMLHttpRequest();
-        req.open('GET', 'https://api.myjson.com/bins/uptto', false);
+        req.open('GET', 'https://api.myjson.com/bins/1bpb69', false);
         req.onload = function() {
           if (req.status == 200) {
-            alert(req.response);
             resolve(JSON.parse(req.response));
           }
           else {
@@ -20,12 +19,10 @@ $(document).ready(function () {
 }
 
 getPosts().then(function(data){
-  alert("it worked");
-  alert(data);
    html = Mustache.render(template, data);
    output.append(html);
   }).catch(() => {
-    alert('Algo salió mal');
+    console.log('Something went wrong');
   });
 
 
