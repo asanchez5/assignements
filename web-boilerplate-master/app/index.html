@@ -47,8 +47,8 @@
                 <label class="main__promotional-label">Los mejores agentes de seguridad</label>
 
                 <div class="main__search-bar">
-                  <input class="main__search-bar--input" type="text" name="" value="" placeholder="Buscar por ubicacion">
-                  <button class="main__search-bar--button"></button>
+                  <input class="main__search-bar--input" id="search_bar" type="text" name="" value="" placeholder="Buscar por ubicacion">
+                  <button class="main__search-bar--button" id="search_button"></button>
                 </div>
               </div>
 
@@ -67,13 +67,6 @@
                           <button type="button" class="flex-container__item--button">Contratar</button>
                         </div>
                         {{/companies}}
-                    <script>
-                    var str = '<img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">'; //it can be anything
-                    var Obj = document.getElementById('true'); //any element to be fully replaced
-                    if(Obj.outerHTML) { //if outerHTML is supported
-                        Obj.outerHTML=str; ///it's simple replacement of whole element with contents of str var
-                    }
-                    </script>
                 </script>
               </div>
             </div> <!-- #main -->
