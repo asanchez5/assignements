@@ -1,3 +1,58 @@
+p {
+  color: white;
+  font-size: 1em;
+  height: 70%;
+}
+
+.container {
+  width: 200px;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+#twitter-text {
+  font-family: arial;
+}
+
+#instagram-text {
+  font-family: sans-serif;
+}
+
+#facebook-text {
+  font-family: Fira Code;
+}
+
+#facebook-color {
+  background-color: #003375;
+}
+
+#instagram-color {
+  background-color: #d4aa27;
+}
+
+#twitter-color {
+  background-color: #0A74FF;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.icon {
+  font-size: 3em;
+  margin-left: 35%;
+}
+
+.box-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 .header-text {
   display: flex;
   flex-direction: row;
@@ -5,125 +60,22 @@
   margin-bottom: 5%;
 }
 
-.flex-container {
-  list-style: none;
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-around;
-  -webkit-flex-flow: row wrap;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wrap    {
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.facebook-container {
-  background-color: #003375;
-  height: 250px;
-  margin: 10px;
-}
-
-.instagram-container {
-  background-color: #d4aa27;
-  height: 250px;
-  margin: 10px;
-}
-
-.twitter-container {
-  background-color: #0A74FF;
-  height: 250px;
-  margin: 10px;
-}
-
-.facebook-text {
-  width: 200px;
-  padding: 20px;
-  padding-top: 0;
-  font-family: Fira Code;
-  font-size: 1em;
-  color: white;
-}
-
-.instagram-text {
-  width: 200px;
-  padding: 20px;
-  padding-top: 0;
-  font-family: sans-serif;
-  font-size: 1em;
-  color: white;
-}
-
-.twitter-text {
-  width: 200px;
-  padding: 20px;
-  padding-top: 0;
-  font-family: monospace;
-  font-size: 1em;
-  color: white;
-}
-
-a:hover {
-    color: yellow;
-}
-
-.flex-item {
-  background: tomato;
-  padding: 5px;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-
-  line-height: 100px;
-  color: white;
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
-}
-
-.fa-facebook {
-  font-size: 3em;
-  margin-left: 40%;
-  margin-top: 20%;
-}
-
-.fa-twitter-square {
-  font-size: 3em;
-  margin-left: 40%;
-  margin-top: 5%;
-}
-
-.fa-instagram {
-  font-size: 3em;
-  margin-left: 40%;
-  margin-top: -8%;
-}
-
 @media only screen
   and (max-device-width: 600px){
-    .facebook-container {
+    .container {
+      height: 250px;
+      margin: 10px;
+    }
+
+    #facebook-color {
       background-color: #27782d;
-      height: 250px;
-      margin: 10px;
     }
 
-    .instagram-container {
+    #instagram-color {
       background-color: #f42929;
-      height: 250px;
-      margin: 10px;
     }
 
-    .twitter-container {
+    #twitter-color {
       background-color: #782740;
-      height: 250px;
-      margin: 10px;
     }
-
 }
