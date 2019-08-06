@@ -20,6 +20,9 @@
         <link rel="stylesheet" href="css/style.css" />
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+        <script src="/js/main.js"></script>
     </head>
     <body>
         <!-- build:remove -->
@@ -49,92 +52,30 @@
                 </div>
               </div>
 
-              <div class="flex-container">
-                <div class="flex-container__item">
-                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
-                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
-                  <div class="flex-container__item--separator"></div>
-
-                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
-                      Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
-                      convallis ante.</article>
-                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="flex-container__item--button">Contratar</button>
-                </div>
-
-                <div class="flex-container__item">
-                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
-                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
-                  <div class="flex-container__item--separator"></div>
-
-                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
-                      Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
-                      convallis ante.</article>
-                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="flex-container__item--button">Contratar</button>
-                </div>
-
-                <div class="flex-container__item">
-                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
-                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
-                  <div class="flex-container__item--separator"></div>
-
-                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
-                      Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
-                      convallis ante.</article>
-                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="flex-container__item--button">Contratar</button>
-                </div>
-
-                <div class="flex-container__item">
-                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
-                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
-                  <div class="flex-container__item--separator"></div>
-
-                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
-                      Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
-                      convallis ante.</article>
-                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="flex-container__item--button">Contratar</button>
-                </div>
-
-                <div class="flex-container__item">
-                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
-                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
-                  <div class="flex-container__item--separator"></div>
-
-                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
-                      Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
-                      convallis ante.</article>
-                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="flex-container__item--button">Contratar</button>
-                </div>
-
-                <div class="flex-container__item">
-                  <label class="flex-container__item--title">Chuck Norris Bodyguards</label>
-                  <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
-                  <div class="flex-container__item--separator"></div>
-
-                  <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
-                  <article class="flex-container__item--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce eleifend vel enim ac lacinia. Phasellus ac nisl id velit tristique accumsan nec at enim.
-                      Etiam posuere tellus ut ligula feugiat auctor. Morbi ut quam aliquet, viverra purus in,
-                      convallis ante.</article>
-                  <label class="flex-container__item--from-price">Desde: $15 / 12 horas</label>
-                  <button type="button" class="flex-container__item--button">Contratar</button>
-                </div>
+              <div class="flex-container" id="output">
+                <script type="text/html" id="output-script">
+                        {{#companies}}
+                        <div class="flex-container__item">
+                          <label class="flex-container__item--title">{{name}}</label>
+                          {{#isCertified}}
+                            <img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">
+                          {{/isCertified}}
+                          <div class="flex-container__item--separator"></div>
+                          <img class="flex-container__item--image" src="../assets/companies/chuck-norris-logo.png" alt="Chuck Norris image">
+                          <article class="flex-container__item--description">{{description}}</article>
+                          <label class="flex-container__item--from-price">Desde: ${{rate}} / {{hours}} horas</label>
+                          <button type="button" class="flex-container__item--button">Contratar</button>
+                        </div>
+                        {{/companies}}
+                    <script>
+                    var str = '<img class="flex-container__item--logo" src="../assets/certified.png" alt="logo">'; //it can be anything
+                    var Obj = document.getElementById('true'); //any element to be fully replaced
+                    if(Obj.outerHTML) { //if outerHTML is supported
+                        Obj.outerHTML=str; ///it's simple replacement of whole element with contents of str var
+                    }
+                    </script>
+                </script>
               </div>
-
             </div> <!-- #main -->
 
         <div class="footer">
@@ -143,10 +84,6 @@
               <label class="footer__text-terms">Terminos y condiciones</label>
             </footer>
         </div>
-
-        <script src="js/vendor/jquery-1.10.1.min.js"></script>
-        <script src="js/main.js"></script>
-
         <!-- Live reload option. Remove in production environments -->
         <!-- <script src="//localhost:35729/livereload.js"></script>-->
     </body>
