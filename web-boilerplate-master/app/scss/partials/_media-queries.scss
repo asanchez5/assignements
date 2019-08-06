@@ -1,0 +1,359 @@
+//
+// * All Rights Reserved
+// * This software is proprietary information of
+// * Intelligent Sense
+// * Use is subject to license terms.
+// * Filename: _media-queries.scss
+//
+
+// *
+// * Author:      kchaves@intelligentsense.com
+// * Date:        28/10/2013
+// * Description: Media queries partial. Add here all the media queries
+//
+//
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+   /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+   /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (max-device-width : 768px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+   /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+   /* Styles */
+}
+
+@media only screen and (max-width : 1224px) {
+   /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+   /* Styles */
+}
+
+/* Retina Display ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+   /* Styles */
+}
+
+
+@media screen and (max-width: 768px) {
+  .header__item:not(:first-child) {display: none;}
+  .header__ingresar-link {display: none !important;}
+  .header__icon {
+    float: right;
+    display: block !important;
+    margin-right: 20px;
+    margin-top: 5px !important;
+    i {
+      font-size: 3.5em;
+    }
+  }
+
+  .main {
+      &__background-image-container {
+        background-image: url(../assets/banner-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 58vw;
+        width: auto;
+      }
+      &__promotional-label {
+        margin-top: 32vw;
+        margin-left: 10vw;
+      }
+
+      &__search-bar{
+        position:relative;
+        margin-top: 2vw;
+
+        &--input {
+          height: 45px;
+          width: 82vw;
+          margin-left: 10vw;
+          margin-top: 4vw;
+        }
+
+        &--button{
+          position: relative;
+          margin-left: -47px;
+          height: 30px;
+          width: 30px;
+
+          background: url(../assets/lupa.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          &:hover{
+            cursor:pointer;
+          }
+        }
+      }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+      &__background-image-container {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 58vw;
+        width: auto;
+      }
+      &__promotional-label {
+        margin-top: 62vw;
+        color: black;
+        margin-left: 10vw;
+        font-size: 24px;
+        width: 75vw;
+      }
+
+      &__search-bar{
+        position:relative;
+        margin-top: 2vw;
+
+        &--input {
+          height: 45px;
+          width: 89vw;
+          margin-left: 5vw;
+          margin-top: 2vw;
+        }
+
+        &--button{
+          position: relative;
+          margin-left: -47px;
+          height: 30px;
+          width: 30px;
+
+          background: url("../assets/lupa.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          &:hover{
+            cursor:pointer;
+          }
+        }
+      }
+  }
+
+  .flex-container {
+    margin-top: 36vw;
+    padding: 0;
+  }
+
+  .footer {
+
+      footer {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          flex-direction: column;
+          justify-content: space-around;
+      }
+      &__text-description {
+        margin-right: 150px;
+      }
+      &__text-terms {
+        margin-right: 0;
+        margin-left: 30px;
+      }
+  }
+
+
+   /* Styles */
+}
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+   div {
+
+        a {
+                float: left;
+                width: auto;
+                margin-bottom: 0;
+        }
+
+        li:first-child object {
+                float: left;
+                margin-left: 0;
+        }
+
+        li:last-child a {
+                float: right;
+                margin-right: 0;
+        }
+   }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+   .main {
+        article {
+
+            }
+
+        aside {
+                float: right;
+                width: 28%;
+            }
+   }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        // width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
